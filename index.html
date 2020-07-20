@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="style.css">
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:ital@1&display=swap" rel="stylesheet">
+  <script src="https://cdn.freecodecamp.org/testable-projects-fcc/v1/bundle.js"></script>
+
+  <title>Survey Diving</title>
+</head>
+
+<body>
+
+  <div class="container">
+    <header>
+      <h1 id="title">Survey For Divers</h1>
+      <p id="description">Quick survey for make a dive with us</p>
+    </header>
+    <main>
+
+      <form id="survey-form">
+        <div class="form-group">
+          <label id="name-label" for="name">First Name</label>
+          <input class="form-box" type="text" id="name" name="name" placeholder="Your Name" required>
+        </div>
+
+        <div class="form-group">
+          <label id="surname-label" for="surname">Surname</label>
+          <input class="form-box" type="text" id="surname" name="surname" placeholder="Your Surname" required>
+        </div>
+
+        <div class="form-group">
+          <label id="email-label" for="email">Email</label>
+          <input class="form-box" type="email" name="email" id="email" placeholder="Insert you Email" required>
+        </div>
+
+        <div class="form-group">
+          <label id="number-label" for="number">Age</label>
+          <input class="form-box" type="number" name="number" id="number" placeholder="Age" min="10" max="99">
+        </div>
+
+        <div class="form-group">
+          <label id="dive" for="dive">Number of Dive</label>
+          <input class="form-box" type="number" name="dive" id="dive-number" placeholder="Number of your dive" required>
+        </div>
+
+        <div class="form-group">
+          <p>Are you in good health?</p>
+          <select class="form-box" name="health" id="dropdown" required>
+            <option selected disabled value>Your Status</option>
+            <option value="Yes">Yes</option>
+            <option value="No">No</option>
+          </select>
+        </div>
+
+        <div class="form-group">
+          <p>Your Certificate</p>
+          <label>
+            <input type="radio" name="license" class="dive-license" value="Open Water Diver" checked>Open Water Diver
+          </label>
+          <label>
+            <input type="radio" name="license" class="dive-license" value="Advance Open Water Diver">Advance Open Water
+            Diver
+          </label>
+          <label>
+            <input type="radio" name="license" class="dive-license" value="Rescue Diver">Rescue Diver
+          </label>
+          <label>
+            <input type="radio" name="license" class="dive-license" value="Divemaster">Divemaster
+          </label>
+          <label>
+            <input type="radio" name="license" class="dive-license" value="Instructor">Instructor
+          </label>
+        </div>
+
+        <div class="form-group">
+          <p>Your Speciality</p>
+          <label>
+            <input type="checkbox" name="speciality" class="speciality" value="Altitude Diver">Altitude Diver
+          </label>
+          <label>
+            <input type="checkbox" name="speciality" class="speciality" value="Cavern Diver">Cavern Diver
+          </label>
+          <label>
+            <input type="checkbox" name="speciality" class="speciality" value="Deep Diver">Deep Diver
+          </label>
+          <label>
+            <input type="checkbox" name="speciality" class="speciality" value="Diver Scooter">Diver Scooter
+          </label>
+          <label>
+            <input type="checkbox" name="speciality" class="speciality" value="Drift Diver">Drift Diver
+          </label>
+          <label>
+            <input type="checkbox" name="speciality" class="speciality" value="Dry Suit Diver">Dry Suit Diver
+          </label>
+          <label>
+            <input type="checkbox" name="speciality" class="speciality" value="EFR">EFR
+          </label>
+          <label>
+            <input type="checkbox" name="speciality" class="speciality" value="Nitrox">Nitrox
+          </label>
+          <label>
+            <input type="checkbox" name="speciality" class="speciality" value="Ice Diver">Ice Diver
+          </label>
+          <label>
+            <input type="checkbox" name="speciality" class="speciality" value="Rebreather Diver">Rebreather Diver
+          </label>
+          <label>
+            <input type="checkbox" name="speciality" class="speciality" value="Wreck Diver">Wreck Diver
+          </label>
+        </div>
+
+        <div class="form-group">
+          <p>Other Request</p>
+          <textarea name="request" id="request" class="text-request" placeholder="Your Request" cols="90"
+            rows="10"></textarea>
+        </div>
+
+        <div class="form-group">
+          <button type="submit" id="submit">Submit</button>
+        </div>
+
+      </form>
+    </main>
+  </div>
+  <script src="https://cdn.freecodecamp.org/testable-projects-fcc/v1/bundle.js"></script>
+
+</body>
+
+</html>
